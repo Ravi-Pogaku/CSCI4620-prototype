@@ -1,57 +1,142 @@
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import 'bootstrap-icons/font/bootstrap-icons.css'
+import React, { useState, useEffect } from 'react';
 import ScrollableContainer from '../components/ScrollableContainer';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function Home() {
-  
+  const [time, setTime] = useState(new Date().toLocaleTimeString());
+
+  useEffect(() => {
+    // Update time every second
+    const interval = setInterval(() => {
+      setTime(new Date().toLocaleTimeString());
+    }, 1000);
+
+    return () => clearInterval(interval); // Cleanup on component unmount
+  }, []);
+
   return (
-    <ScrollableContainer
+    <div
       style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        flexDirection: 'column',
+      }}
+    >
+      {/* ScrollableContainer */}
+      <ScrollableContainer
+        style={{
           backgroundColor: '#121212',
           color: '#ffffff',
-          width: '300px', // Adjust the size as needed
-          height: '300px', // Ensures 1:1 ratio
+          width: '550px', // Adjust the size as needed
+          height: '550px', // Ensures 1:1 ratio
           padding: '20px',
-          borderRadius: '10%', // Optional for a circular smartwatch display
+          borderRadius: '10%', // Circular smartwatch display
           boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)', // Subtle shadow effect
           overflow: 'auto',
-      //   cursor: 'grab', // Indicates that the container can be dragged
-      }}
-      className="overflow-hidden"
-    >
-      {/* Grid for home screen icons */}
-      <div className="d-flex flex-wrap align-items-center">
+          position: 'relative', // Allow positioning of the bar inside
+        }}
+        className="overflow-hidden"
+      >
+        {/* Top Bar for Battery Status and Time */}
         <div
-          style={{ height: 75, width: 75 }}
-          className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
+          style={{
+            backgroundColor: '#1E1E1E',
+            color: '#ffffff',
+            width: '100%', // Match container width
+            padding: '10px',
+            borderTopLeftRadius: '10%',
+            borderTopRightRadius: '10%',
+            textAlign: 'center',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            fontSize: '18px',
+            //position: 'sticky', // Sticky inside the container
+            top: 0, // Stick to the top of the scrollable area
+            zIndex: 10, // Ensure it's above other content
+          }}
         >
-          <i className="bi-alarm fs-2"></i>
+          <div>
+            <i className="bi-battery-half" style={{ marginRight: '5px' }}></i>
+            75% {/* Static or replace with dynamic battery level */}
+          </div>
+          <div>{time}</div> {/* Dynamic time */}
         </div>
-        <img className="rounded-circle p-1" src="https://via.placeholder.com/75" alt="Icon 2" />
-        <img className="rounded-circle p-1" src="https://via.placeholder.com/75" alt="Icon 3" />
-        <img className="rounded-circle p-1" src="https://via.placeholder.com/75" alt="Icon 4" />
+
+        {/* Grid for home screen icons */}
         <div
-          style={{ height: 75, width: 75 }}
-          className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
+          className="d-flex flex-wrap align-items-center justify-content-center"
+          style={{ gap: '2px', marginTop: '20px' }} // Add space below the top bar
         >
-          <i className="bi-alarm fs-2"></i>
+          <div
+            style={{ height: 150, width: 150 }}
+            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
+          >
+            <i className="bi-alarm fs-2"></i>
+          </div>
+          <img
+            className="rounded-circle p-1"
+            src="https://via.placeholder.com/150"
+            alt="Icon 2"
+          />
+          <img
+            className="rounded-circle p-1"
+            src="https://via.placeholder.com/150"
+            alt="Icon 3"
+          />
+          <img
+            className="rounded-circle p-1"
+            src="https://via.placeholder.com/150 "
+            alt="Icon 4"
+          />
+          <div
+            style={{ height: 150, width: 150 }}
+            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
+          >
+            <i className="bi-alarm fs-2"></i>
+          </div>
+          <img
+            className="rounded-circle p-1"
+            src="https://via.placeholder.com/150 "
+            alt="Icon 2"
+          />
+          <img
+            className="rounded-circle p-1"
+            src="https://via.placeholder.com/150 "
+            alt="Icon 3"
+          />
+          <img
+            className="rounded-circle p-1"
+            src="https://via.placeholder.com/150"
+            alt="Icon 4"
+          />
+          <div
+            style={{ height: 150, width: 150 }}
+            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
+          >
+            <i className="bi-alarm fs-2"></i>
+          </div>
+          <img
+            className="rounded-circle p-1"
+            src="https://via.placeholder.com/150"
+            alt="Icon 2"
+          />
+          <img
+            className="rounded-circle p-1"
+            src="https://via.placeholder.com/150"
+            alt="Icon 3"
+          />
+          <img
+            className="rounded-circle p-1"
+            src="https://via.placeholder.com/150"
+            alt="Icon 4"
+          />
         </div>
-        <img className="rounded-circle p-1" src="https://via.placeholder.com/75" alt="Icon 2" />
-        <img className="rounded-circle p-1" src="https://via.placeholder.com/75" alt="Icon 3" />
-        <img className="rounded-circle p-1" src="https://via.placeholder.com/75" alt="Icon 4" />
-        <div
-          style={{ height: 75, width: 75 }}
-          className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
-        >
-          <i className="bi-alarm fs-2"></i>
-        </div>
-        <img className="rounded-circle p-1" src="https://via.placeholder.com/75" alt="Icon 2" />
-        <img className="rounded-circle p-1" src="https://via.placeholder.com/75" alt="Icon 3" />
-        <img className="rounded-circle p-1" src="https://via.placeholder.com/75" alt="Icon 4" />
-      </div>
-    </ScrollableContainer>
+      </ScrollableContainer>
+    </div>
   );
 }
 
-export default Home
+export default Home;
