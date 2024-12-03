@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import ScrollableContainer from '../components/ScrollableContainer';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
+
 function Home() {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
+
 
   useEffect(() => {
     // Update time every second
@@ -11,8 +13,10 @@ function Home() {
       setTime(new Date().toLocaleTimeString());
     }, 1000);
 
+
     return () => clearInterval(interval); // Cleanup on component unmount
   }, []);
+
 
   return (
     <div
@@ -65,22 +69,47 @@ function Home() {
           <div>{time}</div> {/* Dynamic time */}
         </div>
 
+
         {/* Grid for home screen icons */}
         <div
           className="d-flex flex-wrap align-items-center justify-content-center"
           style={{ gap: '2px', marginTop: '20px' }} // Add space below the top bar
         >
-          <div
-            style={{ height: 150, width: 150 }}
-            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
-          >
-            <i className="bi-alarm fs-2"></i>
-          </div>
+     <div
+  style={{
+    height: 150,
+    width: 150,
+    cursor: "pointer", // Makes it clear the div is clickable
+  }}
+  className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
+  onClick={() => (window.location.href = '/AIAssistant.jsx')} // Redirect to the desired page
+>
+  <img
+    src="./ai_assistant.png"
+    alt="AI Assistant Icon"
+    style={{
+      height: "100%",
+      width: "100%",
+      objectFit: "cover",
+      borderRadius: "100%",
+    }}
+  />
+</div>
+
+
+
           <img
-            className="rounded-circle p-1"
-            src="https://via.placeholder.com/150"
-            alt="Icon 2"
-          />
+    src='public\fitness_tracker.png'
+    alt="Fitness Tracker Icon"
+    style={{
+      height: "29%",
+      width: "29%",
+      objectFit: "cover", // Ensures image fills the circle without distortion
+      borderRadius: "100%", // Makes the image circular
+    }}
+  />
+
+
           <img
             className="rounded-circle p-1"
             src="https://via.placeholder.com/150"
@@ -138,5 +167,6 @@ function Home() {
     </div>
   );
 }
+
 
 export default Home;
