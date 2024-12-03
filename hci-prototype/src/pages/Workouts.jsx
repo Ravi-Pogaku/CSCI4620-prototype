@@ -3,6 +3,8 @@ import React from 'react';
 
 import Button from 'react-bootstrap/Button';
 
+import StatusBar from '../components/StatusBar';
+
 import {
         faPersonBiking, 
         faPersonRunning, 
@@ -33,6 +35,8 @@ export default function Workouts() {
       }}
       className="overflow-hidden"
     >  
+        <StatusBar />
+
         {/* these are the placeholders because this is the only icons i could find easily  */}
         <h5>Workouts</h5>
         <WorkoutComponent workoutName="Walking" duration={20} icon={faPersonWalking} />
