@@ -50,10 +50,10 @@ function ScrollableContainer({ children, style, className }) {
         }
     };
 
-    useEffect(() => {
-        // Center the container when the component mounts
-        centerContainer();
-    }, []);
+    // useEffect(() => {
+    //     // Center the container when the component mounts
+    //     centerContainer();
+    // }, []);
 
     return (
         <div
@@ -67,7 +67,7 @@ function ScrollableContainer({ children, style, className }) {
             onScroll={handleScroll} // Track scrolling
         >
             {/* Scroll progress bar */}
-            <div
+            {/* <div
                 style={{
                     position: 'absolute',
                     top: 0,
@@ -78,7 +78,7 @@ function ScrollableContainer({ children, style, className }) {
                     borderRadius: '5px',
                     transition: 'height 0.1s ease-in-out', // Smooth animation
                 }}
-            ></div>
+            ></div> */}
 
             {/* Content */}
             {children}
