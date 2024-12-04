@@ -34,7 +34,7 @@ export default function Workouts() {
           overflow: 'auto',
       //   cursor: 'grab', // Indicates that the container can be dragged
       }}
-      className="overflow-hidden"
+      className="overflow-hidden d-flex flex-column justify-content-between"
     >  
         
 

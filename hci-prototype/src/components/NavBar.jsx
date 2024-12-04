@@ -7,7 +7,7 @@ function NavBar() {
     const location = useLocation();
 
     // Hide the navigation buttons on the home screen
-    const hideButtons = ['/', '/home'].includes(location.pathname);
+    const hideButtons = ['/', '/home', '/workouts/start-workout'].includes(location.pathname);
 
     return (
         <div
@@ -25,6 +25,7 @@ function NavBar() {
                 position: 'sticky', // Sticky inside the container
                 bottom: 0, // Stick to the top of the scrollable area
                 zIndex: 10, // Ensure it's above other content
+                // pointerEvents: 'none', // Allow clicks to pass through
             }}
         >
             {/* Back Button */}

@@ -3,11 +3,18 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import { useState, useEffect } from 'react';
 
+import { useLocation } from 'react-router-dom';
+
 
 
 // Top Bar for Battery Status and Time 
 export default function StatusBar() {
     const [time, setTime] = useState(new Date().toLocaleTimeString().replace(/:\d+ /, ' '));
+
+    const location = useLocation();
+
+    // Hide the navigation buttons on the home screen
+    const hideButtons = ['/workouts/start-workout'].includes(location.pathname);
 
 
     useEffect(() => {
@@ -41,11 +48,13 @@ export default function StatusBar() {
             zIndex: 10, // Ensure it's above other content
           }}
         >
-          <div>
-            <i className="bi-battery-half" style={{ marginRight: '5px' }}></i>
-            50% {/* Static */}
-          </div>
-          <div>{time}</div> {/* Dynamic time */}
+          { !hideButtons && [
+            <div>
+              <i className="bi-battery-half" style={{ marginRight: '5px' }}></i>
+              50% 
+            </div>,
+            <div>{ time }</div>
+          ]}
         </div>
     )
 
