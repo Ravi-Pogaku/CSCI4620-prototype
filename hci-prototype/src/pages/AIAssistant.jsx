@@ -21,7 +21,7 @@ function AIAssistant() {
       {/* Plain Black Square */}
       <ScrollableContainer
         style={{
-          backgroundColor: '#1c0239', // Black background
+          backgroundColor: '#1c0239',
           color: '#ffffff',
           width: '300px', // Adjust the size as needed
           height: '300px', // Ensures 1:1 ratio
