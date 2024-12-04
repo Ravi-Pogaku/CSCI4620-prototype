@@ -21,7 +21,7 @@ function AIAssistant() {
       {/* Plain Black Square */}
       <ScrollableContainer
         style={{
-          backgroundColor: '#1c0239', // Black background
+          backgroundColor: '#1c0239',
           color: '#ffffff',
           width: '300px', // Adjust the size as needed
           height: '300px', // Ensures 1:1 ratio
@@ -52,7 +52,7 @@ function AIAssistant() {
               marginTop: '10px',
               cursor: 'pointer', // Makes it clear the div is clickable
             }}
-            onClick={() => navigate('/SchedulePage')} // Correct route path
+            onClick={() => navigate('/schedule')} // Correct route path
           >
             <Calendar size={24} />
             <span style={{ marginLeft: '10px' }}>Show today's schedule</span>
@@ -70,7 +70,7 @@ function AIAssistant() {
               marginTop: '10px',
               cursor: 'pointer' // Makes it clear the div is clickable
             }}
-            onClick={() => navigate('/MapPage')} // Correct route path
+            onClick={() => navigate('/map')} // Correct route path
           >
             <TreeFill size={24} />
             <span style={{ marginLeft: '10px' }}>Show some nearby parks</span>
@@ -88,7 +88,7 @@ function AIAssistant() {
               marginTop: '8px',
               fontSize: '14px', // Smaller font size for text
             }}
-            onClick={() => navigate('/TimePage')} // Correct route path
+            onClick={() => navigate('/time')} // Correct route path
           >
             <Clock size={18} /> {/* Smaller icon */}
             <span style={{ marginLeft: '8px' }}>

@@ -1,11 +1,13 @@
+import { useNavigate } from 'react-router-dom';
+
 import ScrollableContainer from '../components/ScrollableContainer';
 import StatusBar from '../components/StatusBar';
 import NavBar from '../components/NavBar';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeartPulse } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from 'react-router-dom';
+import { faHeartPulse, faChartColumn } from '@fortawesome/free-solid-svg-icons';
+
 
 function Home() {
   const navigate = useNavigate();
@@ -41,41 +43,51 @@ function Home() {
           className="d-flex flex-wrap align-items-center justify-content-center"
           style={{ gap: '2px' }}
         >
-          {/* AI Assistant */}
-          <div
-            style={{
-              height: 75,
-              width: 75,
-              cursor: "pointer", // Makes it clear the div is clickable
-            }}
-            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
-            onClick={() => (navigate('/AIAssistant'))} // Redirect to the desired page
-          >
-            <img
-              src="./ai_assistant.png"
-              alt="AI Icon"
+              <div
               style={{
-                height: "100%",
-                width: "100%",
-                objectFit: "cover",
-                borderRadius: "100%",
+                height: 75,
+                width: 75,
+                cursor: "pointer", // Makes it clear the div is clickable
               }}
-            />
+              className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center m-1"
+              onClick={() => navigate("/ai-assistant")}
+            >
+              <img
+                src="./ai_assistant.png"
+                alt="AI Icon"
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  objectFit: "cover",
+                  borderRadius: "100%",
+                }}
+              />
+            </div>
+
+
+          <div
+            style={{ height: 75, width: 75 }}
+            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center m-1"
+          >
+            <i className="bi bi-alexa fs-2"></i>
           </div>
           
           {/* Fitness App */}
           <div
-            style={{             
-               height: 75,
-               width: 75,
-               cursor: "pointer"      
-              }}
-              onClick={() => (navigate('/Workouts'))}
-            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
-          >  
+            style={{ height: 75, width: 75, cursor: 'pointer' }}
+            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center m-1"
+            onClick={() => navigate('/workouts')}
+          >
             <FontAwesomeIcon icon={faHeartPulse} size="2x" />
           </div>
-          
+
+          <div
+            style={{ height: 75, width: 75, cursor: 'pointer' }}
+            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center m-1"
+            onClick={() => navigate('/activity')}
+          >
+            <FontAwesomeIcon icon={faChartColumn} size="2x" />
+          </div>
         </div>
     
       </ScrollableContainer>
