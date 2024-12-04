@@ -13,6 +13,7 @@ import {
         faPersonSkating,
         faPersonSnowboarding,
         faPersonSkiing,
+        faDumbbell
     } from '@fortawesome/free-solid-svg-icons';
 
 import ScrollableContainer from '../components/ScrollableContainer';
@@ -42,6 +43,7 @@ export default function Workouts() {
         <WorkoutComponent workoutName="Walking" duration={20} icon={faPersonWalking} />
         <WorkoutComponent workoutName="Running" duration={30} icon={faPersonRunning} />
         <WorkoutComponent workoutName="Cycling" duration={15} icon={faPersonBiking} />
+        <WorkoutComponent workoutName="Weightlifting" duration={60} icon={faDumbbell} />
         <WorkoutComponent workoutName="Swimming" duration={10} icon={faSwimmer} />
         <WorkoutComponent workoutName="Skating" duration={25} icon={faPersonSkating} />
         <WorkoutComponent workoutName="Snowboarding" duration={40} icon={faPersonSnowboarding} />

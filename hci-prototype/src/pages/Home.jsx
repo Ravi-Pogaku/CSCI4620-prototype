@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 import ScrollableContainer from '../components/ScrollableContainer';
 import StatusBar from '../components/StatusBar';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -7,6 +9,7 @@ import { faHeartPulse } from '@fortawesome/free-solid-svg-icons';
 
 
 function Home() {
+  const navigate = useNavigate();
 
   return (
     <div
@@ -64,14 +67,15 @@ function Home() {
 
           <div
             style={{ height: 75, width: 75 }}
-            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
+            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center m-1"
           >
-            <i class="bi bi-alexa fs-2"></i>
+            <i className="bi bi-alexa fs-2"></i>
           </div>
 
           <div
             style={{ height: 75, width: 75 }}
-            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
+            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center m-1"
+            onClick={() => navigate('/workouts')}
           >
             <FontAwesomeIcon icon={faHeartPulse} size="2x" />
           </div>
@@ -89,7 +93,7 @@ function Home() {
           />
           <div
             style={{ height: 75, width: 75 }}
-            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
+            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center m-1"
           >
             <i className="bi-alarm fs-2"></i>
           </div>
@@ -110,7 +114,7 @@ function Home() {
           />
           <div
             style={{ height: 75, width: 75 }}
-            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
+            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center m-1"
           >
             <i className="bi-alarm fs-2"></i>
           </div>
