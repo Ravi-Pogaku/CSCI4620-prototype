@@ -106,7 +106,7 @@ export default function WorkoutPage() {
                         <FontAwesomeIcon 
                             style={{color: '#BF565A', fontSize: '3rem', cursor: 'pointer'}} 
                             icon={faCircleStop} 
-                            onClick={() => navigate('/workouts')}
+                            onClick={() => navigate(-1)}
                         />
                     </Col>
                 </Row>

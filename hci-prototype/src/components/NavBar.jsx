@@ -31,12 +31,14 @@ function NavBar() {
             {/* Back Button */}
             {!hideButtons && [
             <i 
+                style={{cursor: 'pointer'}}
                 key="back"
                 className="bi bi-arrow-left-circle-fill"
                 onClick={() => navigate(-1)}
             ></i>,
             
-            <i 
+            <i
+                style={{cursor: 'pointer'}}
                 key="home"
                 className="bi bi-house-fill"
                 onClick={() => navigate('/home')}
