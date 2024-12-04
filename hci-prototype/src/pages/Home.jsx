@@ -5,7 +5,7 @@ import StatusBar from '../components/StatusBar';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeartPulse } from '@fortawesome/free-solid-svg-icons';
+import { faHeartPulse, faChartColumn } from '@fortawesome/free-solid-svg-icons';
 
 
 function Home() {
@@ -81,11 +81,14 @@ function Home() {
             <FontAwesomeIcon icon={faHeartPulse} size="2x" />
           </div>
 
-          <img
-            className="rounded-circle p-1"
-            src="https://via.placeholder.com/75"
-            alt="Icon 3"
-          />
+          <div
+            style={{ height: 75, width: 75, cursor: 'pointer' }}
+            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center m-1"
+            onClick={() => navigate('/activity')}
+          >
+            <FontAwesomeIcon icon={faChartColumn} size="2x" />
+          </div>
+
           <img
             className="rounded-circle p-1"
             src="https://via.placeholder.com/75 "
