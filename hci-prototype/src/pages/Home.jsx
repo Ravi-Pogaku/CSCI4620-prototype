@@ -43,19 +43,45 @@ function Home() {
           className="d-flex flex-wrap align-items-center justify-content-center"
           style={{ gap: '2px' }}
         >
+              <div
+  style={{
+    height: 75,
+    width: 75,
+    cursor: "pointer", // Makes it clear the div is clickable
+  }}
+  className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
+  onClick={() => (window.location.href = '/AIAssistant.jsx')} // Redirect to the desired page
+>
+  <img
+    src="./ai_assistant.png"
+    alt="AI Icon"
+    style={{
+      height: "100%",
+      width: "100%",
+      objectFit: "cover",
+      borderRadius: "100%",
+    }}
+  />
+</div>
+
+
           <div
             style={{ height: 75, width: 75 }}
             className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
-            onClick={() => (navigate("/ai-assistant"))} // Redirect to the desired page
+            
           >
             <i className="bi bi-alexa fs-2"></i>
           </div>
 
           <div
-            style={{ height: 75, width: 75 }}
+            style={{             
+               height: 75,
+               width: 75,
+               cursor: "pointer"      
+              }}
+              onClick={() => (window.location.href = '/Workouts.jsx')}
             className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
-            onClick={() => (navigate("/workouts"))}
-          >
+          >  
             <FontAwesomeIcon icon={faHeartPulse} size="2x" />
           </div>
 
