@@ -35,7 +35,7 @@ export default function Workouts() {
       }}
       className="overflow-hidden"
     >  
-        <StatusBar />
+        
 
         {/* these are the placeholders because this is the only icons i could find easily  */}
         <h5>Workouts</h5>

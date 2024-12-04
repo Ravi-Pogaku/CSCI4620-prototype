@@ -25,13 +25,14 @@ function AIAssistant() {
           color: '#ffffff',
           width: '300px', // Adjust the size as needed
           height: '300px', // Ensures 1:1 ratio
+          padding: '20px',
           borderRadius: '10%', // Circular smartwatch display
           boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)', // Subtle shadow effect
           overflow: 'hidden', // Disable scrolling for now (can adjust as needed)
         }}
-        className="overflow-hidden"
+        className="overflow-hidden d-flex flex-column justify-content-between"
       >
-        <StatusBar />
+        
 
         <div style={{ padding: '10px', marginTop: '-10px' }}>
           {/* Header */}
@@ -51,7 +52,7 @@ function AIAssistant() {
               marginTop: '10px',
               cursor: 'pointer', // Makes it clear the div is clickable
             }}
-            onClick={() => navigate('/SchedulePage.jsx')} // Correct route path
+            onClick={() => navigate('/SchedulePage')} // Correct route path
           >
             <Calendar size={24} />
             <span style={{ marginLeft: '10px' }}>Show today's schedule</span>
@@ -69,7 +70,7 @@ function AIAssistant() {
               marginTop: '10px',
               cursor: 'pointer' // Makes it clear the div is clickable
             }}
-            onClick={() => navigate('/MapPage.jsx')} // Correct route path
+            onClick={() => navigate('/MapPage')} // Correct route path
           >
             <TreeFill size={24} />
             <span style={{ marginLeft: '10px' }}>Show some nearby parks</span>
@@ -87,7 +88,7 @@ function AIAssistant() {
               marginTop: '8px',
               fontSize: '14px', // Smaller font size for text
             }}
-            onClick={() => navigate('/TimePage.jsx')} // Correct route path
+            onClick={() => navigate('/TimePage')} // Correct route path
           >
             <Clock size={18} /> {/* Smaller icon */}
             <span style={{ marginLeft: '8px' }}>

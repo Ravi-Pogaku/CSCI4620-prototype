@@ -25,27 +25,25 @@ export default function StatusBar() {
     return (
         <div
           style={{
-            backgroundColor: '#1E1E1E',
+            backgroundColor: 'transparent',
             color: '#ffffff',
             width: '100%', // Match container width
             height: '30px', // Fixed height
-            padding: '10px',
-            marginBottom: '20px',
-            borderTopLeftRadius: '10%',
-            borderTopRightRadius: '10%',
+            // padding: '10px',
+            // marginBottom: '20px',
             textAlign: 'center',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
             fontSize: '18px',
-            //position: 'sticky', // Sticky inside the container
+            position: 'sticky', // Sticky inside the container
             top: 0, // Stick to the top of the scrollable area
             zIndex: 10, // Ensure it's above other content
           }}
         >
           <div>
             <i className="bi-battery-half" style={{ marginRight: '5px' }}></i>
-            50% {/* Static or replace with dynamic battery level */}
+            50% {/* Static */}
           </div>
           <div>{time}</div> {/* Dynamic time */}
         </div>

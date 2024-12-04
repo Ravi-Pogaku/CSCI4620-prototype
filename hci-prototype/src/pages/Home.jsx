@@ -1,11 +1,11 @@
 import ScrollableContainer from '../components/ScrollableContainer';
 import StatusBar from '../components/StatusBar';
+import NavBar from '../components/NavBar';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeartPulse } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
-
 
 function Home() {
   const navigate = useNavigate();
@@ -20,7 +20,6 @@ function Home() {
         flexDirection: 'column',
       }}
     >
-      {/* ScrollableContainer */}
       <ScrollableContainer
         style={{
           backgroundColor: '#121212',
@@ -33,112 +32,52 @@ function Home() {
           overflow: 'auto',
           position: 'relative', // Allow positioning of the bar inside
         }}
-        className="overflow-hidden"
+        className="overflow-hidden d-flex flex-column justify-content-between"
       >
         
-        <StatusBar />
 
         {/* Grid for home screen icons */}
         <div
           className="d-flex flex-wrap align-items-center justify-content-center"
           style={{ gap: '2px' }}
         >
-              <div
-  style={{
-    height: 75,
-    width: 75,
-    cursor: "pointer", // Makes it clear the div is clickable
-  }}
-  className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
-  onClick={() => (window.location.href = '/AIAssistant.jsx')} // Redirect to the desired page
->
-  <img
-    src="./ai_assistant.png"
-    alt="AI Icon"
-    style={{
-      height: "100%",
-      width: "100%",
-      objectFit: "cover",
-      borderRadius: "100%",
-    }}
-  />
-</div>
-
-
+          {/* AI Assistant */}
           <div
-            style={{ height: 75, width: 75 }}
+            style={{
+              height: 75,
+              width: 75,
+              cursor: "pointer", // Makes it clear the div is clickable
+            }}
             className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
-            
+            onClick={() => (navigate('/AIAssistant'))} // Redirect to the desired page
           >
-            <i className="bi bi-alexa fs-2"></i>
+            <img
+              src="./ai_assistant.png"
+              alt="AI Icon"
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                borderRadius: "100%",
+              }}
+            />
           </div>
-
+          
+          {/* Fitness App */}
           <div
             style={{             
                height: 75,
                width: 75,
                cursor: "pointer"      
               }}
-              onClick={() => (window.location.href = '/Workouts.jsx')}
+              onClick={() => (navigate('/Workouts'))}
             className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
           >  
             <FontAwesomeIcon icon={faHeartPulse} size="2x" />
           </div>
-
-
-          {/* <img
-            className="rounded-circle p-1"
-            src="https://via.placeholder.com/75"
-            alt="Icon 3"
-          />
-          <img
-            className="rounded-circle p-1"
-            src="https://via.placeholder.com/75 "
-            alt="Icon 4"
-          />
-          <div
-            style={{ height: 75, width: 75 }}
-            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
-          >
-            <i className="bi-alarm fs-2"></i>
-          </div>
-          <img
-            className="rounded-circle p-1"
-            src="https://via.placeholder.com/75 "
-            alt="Icon 2"
-          />
-          <img
-            className="rounded-circle p-1"
-            src="https://via.placeholder.com/75 "
-            alt="Icon 3"
-          />
-          <img
-            className="rounded-circle p-1"
-            src="https://via.placeholder.com/75"
-            alt="Icon 4"
-          />
-          <div
-            style={{ height: 75, width: 75 }}
-            className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
-          >
-            <i className="bi-alarm fs-2"></i>
-          </div>
-          <img
-            className="rounded-circle p-1"
-            src="https://via.placeholder.com/75"
-            alt="Icon 2"
-          />
-          <img
-            className="rounded-circle p-1"
-            src="https://via.placeholder.com/75"
-            alt="Icon 3"
-          />
-          <img
-            className="rounded-circle p-1"
-            src="https://via.placeholder.com/75"
-            alt="Icon 4"
-          /> */}
+          
         </div>
+    
       </ScrollableContainer>
     </div>
   );

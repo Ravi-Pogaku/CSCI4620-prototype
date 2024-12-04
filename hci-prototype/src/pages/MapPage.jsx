@@ -11,18 +11,19 @@ function MapPage() {
         color: '#ffffff',
         width: '300px', // Adjust the size as needed
         height: '300px', // Ensures 1:1 ratio
+        padding: '20px',
         borderRadius: '10%', // Circular smartwatch display
         boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)', // Subtle shadow effect
         overflow: 'hidden', // Disable scrolling for now (can adjust as needed)
       }}
-      className="overflow-hidden"
+      className="overflow-hidden d-flex flex-column justify-content-between"
     >
-      <StatusBar />
+      
 
       {/* Static Image Inside Scrollable Container */}
       <div style={{ textAlign: 'center', marginTop: '20px' }}>
         <img
-          src="public\parks.png" // Replace with your image path
+          src="/parks.png" // Replace with your image path
           alt="Today's Schedule"
           style={{ maxWidth: '100%', height: 'auto', borderRadius: '10px' }}
         />

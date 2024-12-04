@@ -1,4 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
+import StatusBar from './StatusBar';
+import NavBar from './NavBar';
 
 function ScrollableContainer({ children, style, className }) {
     const containerRef = useRef(null);
@@ -29,16 +31,16 @@ function ScrollableContainer({ children, style, className }) {
     };
 
     // Function to center the container
-    const centerContainer = () => {
-        const container = containerRef.current;
-        if (container) {
-            const { scrollWidth, scrollHeight, clientWidth, clientHeight } = container;
-            const scrollX = (scrollWidth - clientWidth) / 2;
-            const scrollY = (scrollHeight - clientHeight) / 2;
-            container.scrollLeft = scrollX;
-            container.scrollTop = scrollY;
-        }
-    };
+    // const centerContainer = () => {
+    //     const container = containerRef.current;
+    //     if (container) {
+    //         const { scrollWidth, scrollHeight, clientWidth, clientHeight } = container;
+    //         const scrollX = (scrollWidth - clientWidth) / 2;
+    //         const scrollY = (scrollHeight - clientHeight) / 2;
+    //         container.scrollLeft = scrollX;
+    //         container.scrollTop = scrollY;
+    //     }
+    // };
 
     // Update scroll progress on scroll
     const handleScroll = () => {
@@ -58,30 +60,23 @@ function ScrollableContainer({ children, style, className }) {
     return (
         <div
             ref={containerRef}
-            style={{ ...style, position: 'relative' }} // Ensure position: relative for the parent container
+            style={{ ...style, position: 'relative' }}
             className={className}
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseLeave}
-            onScroll={handleScroll} // Track scrolling
+            onScroll={handleScroll}
         >
-            {/* Scroll progress bar */}
-            {/* <div
-                style={{
-                    position: 'absolute',
-                    top: 0,
-                    right: '5px',
-                    width: '5px',
-                    height: `${scrollProgress}%`, // Dynamic height based on scroll progress
-                    backgroundColor: '#ffffff', // Color of the progress bar
-                    borderRadius: '5px',
-                    transition: 'height 0.1s ease-in-out', // Smooth animation
-                }}
-            ></div> */}
+            
 
-            {/* Content */}
-            {children}
+                <StatusBar />
+
+                {children}
+
+                <NavBar />
+
+            
         </div>
     );
 }

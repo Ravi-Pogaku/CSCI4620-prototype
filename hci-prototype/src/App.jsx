@@ -26,11 +26,11 @@ function App() {
     <div className='d-flex justify-content-center vw-100'>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/Workouts.jsx' element={<Workouts />} />
-        <Route path='/AIAssistant.jsx' element={<AIAssistant />} />
-        <Route path='/SchedulePage.jsx' element={<SchedulePage />} />
-        <Route path='/MapPage.jsx' element={<MapPage />} />
-        <Route path='/TimePage.jsx' element={<TimePage />} />
+        <Route path='/Workouts' element={<Workouts />} />
+        <Route path='/AIAssistant' element={<AIAssistant />} />
+        <Route path='/SchedulePage' element={<SchedulePage />} />
+        <Route path='/MapPage' element={<MapPage />} />
+        <Route path='/TimePage' element={<TimePage />} />
       </Routes>
     </div>
   )
