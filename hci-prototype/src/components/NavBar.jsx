@@ -7,7 +7,7 @@ function NavBar() {
     const location = useLocation();
 
     // Hide the navigation buttons on the home screen
-    const hideButtons = ['/'].includes(location.pathname);
+    const hideButtons = ['/', '/home'].includes(location.pathname);
 
     return (
         <div
@@ -38,7 +38,7 @@ function NavBar() {
             <i 
                 key="home"
                 className="bi bi-house-fill"
-                onClick={() => navigate('/')}
+                onClick={() => navigate('/home')}
             ></i>
             ]}
             

@@ -49,9 +49,9 @@ export default function WorkoutComponent ({workoutName, duration, icon}) {
             backgroundColor: '#3F6634',
             color: '#ffffff',
             height: '70px',
-            marginLeft: '10px',
-            marginRight: '10px',
-            marginBottom: '2px',
+            // marginLeft: '10px',
+            // marginRight: '10px',
+            // marginBottom: '2px',
             // borderRadius: '10%', 
             cursor: 'pointer',
             }}

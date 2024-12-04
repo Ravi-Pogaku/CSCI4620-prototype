@@ -43,33 +43,26 @@ function Home() {
           className="d-flex flex-wrap align-items-center justify-content-center"
           style={{ gap: '2px' }}
         >
-              <div
-              style={{
-                height: 75,
-                width: 75,
-                cursor: "pointer", // Makes it clear the div is clickable
-              }}
-              className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center m-1"
-              onClick={() => navigate("/ai-assistant")}
-            >
-              <img
-                src="./ai_assistant.png"
-                alt="AI Icon"
-                style={{
-                  height: "100%",
-                  width: "100%",
-                  objectFit: "cover",
-                  borderRadius: "100%",
-                }}
-              />
-            </div>
-
-
+          {/* AI Assistant */}
           <div
-            style={{ height: 75, width: 75 }}
+            style={{
+              height: 75,
+              width: 75,
+              cursor: "pointer", // Makes it clear the div is clickable
+            }}
             className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center m-1"
+            onClick={() => navigate("/ai-assistant")}
           >
-            <i className="bi bi-alexa fs-2"></i>
+            <img
+              src="./ai_assistant.png"
+              alt="AI Icon"
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                borderRadius: "100%",
+              }}
+            />
           </div>
           
           {/* Fitness App */}

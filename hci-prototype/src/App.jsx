@@ -9,7 +9,7 @@ import WorkoutPage from './pages/WorkoutPage'
 import SchedulePage from './pages/SchedulePage.jsx'
 import MapPage from './pages/MapPage.jsx'
 import TimePage from './pages/TimePage.jsx';
-import ActivityPage from './pages/AvtivityPage.jsx'
+import ActivityPage from './pages/ActivityPage.jsx'
 
 
 
