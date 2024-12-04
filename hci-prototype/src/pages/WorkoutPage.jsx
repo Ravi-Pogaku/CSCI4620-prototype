@@ -79,7 +79,7 @@ export default function WorkoutPage() {
                     </Col>
                     <Col>
                         <FontAwesomeIcon 
-                            style={{color: '#58932D', fontSize: '2.25rem'}}
+                            style={{color: '#58932D', fontSize: '2.25rem', cursor: 'pointer'}}
                             icon={isActive ? faCirclePause : faCirclePlay} 
                             onClick={isActive ? handlePause : handleResume} 
                         />
@@ -95,7 +95,7 @@ export default function WorkoutPage() {
                 </Row>
                 <Row className='d-flex justify-content-between align-items-center'>
                     <Col style={{width: '155px', flex: '0 0 155px'}}>
-                        <h2 style={{color: '#e25822', fontSize: '2.25rem' ,whiteSpace: 'nowrap'}}>120 BPM</h2>
+                        <h2 style={{color: '#e25822', fontSize: '2.25rem', whiteSpace: 'nowrap'}}>120 BPM</h2>
                     </Col>
                     <Col>
                         <FontAwesomeIcon style={{color: 'red', fontSize: '2.25rem'}} icon={faHeart} />
@@ -104,7 +104,7 @@ export default function WorkoutPage() {
                 <Row className='d-flex justify-content-center align-items-center'>
                     <Col className='d-flex justify-content-center align-items-center'>
                         <FontAwesomeIcon 
-                            style={{color: '#BF565A', fontSize: '3rem'}} 
+                            style={{color: '#BF565A', fontSize: '3rem', cursor: 'pointer'}} 
                             icon={faCircleStop} 
                             onClick={() => navigate('/workouts')}
                         />

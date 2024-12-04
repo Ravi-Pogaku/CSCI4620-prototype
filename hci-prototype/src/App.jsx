@@ -6,6 +6,10 @@ import Workouts from './pages/Workouts'
 import AIAssistant from './pages/AIAssistant'
 import Lockscreen from './pages/Lockscreen'
 import WorkoutPage from './pages/WorkoutPage'
+import SchedulePage from './pages/SchedulePage.jsx'
+import MapPage from './pages/MapPage.jsx'
+import TimePage from './pages/TimePage.jsx';
+
 
 
 function App() {
@@ -17,6 +21,9 @@ function App() {
         <Route path='/ai-assistant' element={<AIAssistant />} />
         <Route path='/home' element={<Home />} />
         <Route path='/workouts/start-workout' element={<WorkoutPage />} />
+        <Route path='/map' element={<MapPage />} />
+        <Route path='/time' element={<TimePage />} />
+        <Route path='/schedule' element={<SchedulePage />} />
       </Routes>
     </div>
   )

@@ -53,6 +53,7 @@ export default function WorkoutComponent ({workoutName, duration, icon}) {
             marginRight: '10px',
             marginBottom: '2px',
             // borderRadius: '10%', 
+            cursor: 'pointer',
             }}
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}

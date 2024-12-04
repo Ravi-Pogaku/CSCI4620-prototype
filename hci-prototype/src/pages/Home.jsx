@@ -44,14 +44,14 @@ function Home() {
           className="d-flex flex-wrap align-items-center justify-content-center"
           style={{ gap: '2px' }}
         >
-                {/* <div
+              <div
               style={{
                 height: 75,
                 width: 75,
                 cursor: "pointer", // Makes it clear the div is clickable
               }}
-              className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center"
-              onClick={() => (window.location.href = '/AIAssistant.jsx')} // Redirect to the desired page
+              className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center m-1"
+              onClick={() => navigate("/ai-assistant")}
             >
               <img
                 src="./ai_assistant.png"
@@ -63,7 +63,8 @@ function Home() {
                   borderRadius: "100%",
                 }}
               />
-            </div> */}
+            </div>
+
 
           <div
             style={{ height: 75, width: 75 }}
@@ -73,13 +74,12 @@ function Home() {
           </div>
 
           <div
-            style={{ height: 75, width: 75 }}
+            style={{ height: 75, width: 75, cursor: 'pointer' }}
             className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center m-1"
             onClick={() => navigate('/workouts')}
           >
             <FontAwesomeIcon icon={faHeartPulse} size="2x" />
           </div>
-
 
           <img
             className="rounded-circle p-1"
