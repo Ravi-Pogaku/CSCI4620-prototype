@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import StatusBar from '../components/StatusBar';
@@ -8,6 +9,12 @@ import { Calendar, Clock, TreeFill} from 'react-bootstrap-icons';
 function AIAssistant() {
   const navigate = useNavigate(); // Initialize navigate
 
+=======
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import ScrollableContainer from '../components/ScrollableContainer';
+
+function AIAssistant() {
+>>>>>>> origin/nimra
   return (
     <div
       style={{
@@ -21,16 +28,24 @@ function AIAssistant() {
       {/* Plain Black Square */}
       <ScrollableContainer
         style={{
+<<<<<<< HEAD
           backgroundColor: '#1c0239', // Black background
           color: '#ffffff',
           width: '300px', // Adjust the size as needed
           height: '300px', // Ensures 1:1 ratio
+=======
+          backgroundColor: '#121212', // Black background
+          color: '#ffffff',
+          width: '550px', // Adjust the size as needed
+          height: '550px', // Ensures 1:1 ratio
+>>>>>>> origin/nimra
           borderRadius: '10%', // Circular smartwatch display
           boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)', // Subtle shadow effect
           overflow: 'hidden', // Disable scrolling for now (can adjust as needed)
         }}
         className="overflow-hidden"
       >
+<<<<<<< HEAD
         <StatusBar />
 
         <div style={{ padding: '10px', marginTop: '-10px' }}>
@@ -95,6 +110,9 @@ function AIAssistant() {
             </span>
           </button>
         </div>
+=======
+        {/* No Content */}
+>>>>>>> origin/nimra
       </ScrollableContainer>
     </div>
   );
