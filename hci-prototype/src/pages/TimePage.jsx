@@ -24,7 +24,7 @@ function TimePage() {
       <div style={{ textAlign: 'center', marginTop: '20px' }}>
         <img
           src="/time.png" 
-          alt="Today's Schedule"
+          alt="Time Chat"
           style={{ maxWidth: '100%', height: 'auto', borderRadius: '10px' }}
         />
       </div>
