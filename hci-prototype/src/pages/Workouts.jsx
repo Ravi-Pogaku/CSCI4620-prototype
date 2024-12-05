@@ -27,7 +27,7 @@ export default function Workouts() {
           backgroundColor: '#121212',
           color: '#ffffff',
           width: '300px', 
-          height: '300px', // Ensures 1:1 ratio
+          height: '300px', 
           padding: '20px',
           borderRadius: '10%', // Optional for a circular smartwatch display
           boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)', // Subtle shadow effect
