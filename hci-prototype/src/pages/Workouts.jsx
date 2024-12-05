@@ -26,13 +26,12 @@ export default function Workouts() {
       style={{
           backgroundColor: '#121212',
           color: '#ffffff',
-          width: '300px', // Adjust the size as needed
+          width: '300px', 
           height: '300px', // Ensures 1:1 ratio
           padding: '20px',
           borderRadius: '10%', // Optional for a circular smartwatch display
           boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)', // Subtle shadow effect
           overflow: 'auto',
-      //   cursor: 'grab', // Indicates that the container can be dragged
       }}
       className="overflow-hidden d-flex flex-column justify-content-between"
     >  
