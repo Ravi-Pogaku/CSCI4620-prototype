@@ -14,17 +14,17 @@ function MapPage() {
         padding: '20px',
         borderRadius: '10%', // Circular smartwatch display
         boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)', // Subtle shadow effect
-        overflow: 'hidden', // Disable scrolling for now (can adjust as needed)
+        overflow: 'hidden', 
       }}
       className="overflow-hidden d-flex flex-column justify-content-between"
     >
       
 
-      {/* Schedule Image */}
+      {/* Park Image */}
       <div style={{ textAlign: 'center', marginTop: '20px' }}>
         <img
           src="/parks.png" 
-          alt="Today's Schedule"
+          alt="Map"
           style={{ maxWidth: '100%', height: 'auto', borderRadius: '10px' }}
         />
       </div>
