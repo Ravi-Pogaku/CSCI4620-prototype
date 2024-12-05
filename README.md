@@ -18,7 +18,9 @@ This is a prototype of our COVID Smartwatch, developed using React.
   - Allows users to select workouts.  
   - Tracks their heart rate and monitors calories burned.  
 
-![image](https://github.com/user-attachments/assets/430d397f-6f34-49f0-a14e-82f7506ba4f1)
+
+![image](https://github.com/user-attachments/assets/0abe5c70-242e-4f45-ade1-6327865b3f75)
+
 
 - **Activity Summary**: Provides a visual report of weekly activity, helping users stay on top of their health and fitness goals.  
 
