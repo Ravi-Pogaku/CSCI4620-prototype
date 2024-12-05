@@ -40,8 +40,7 @@ This is a prototype of our COVID Smartwatch, developed using React.
 Follow these steps to run the COVID SmartWatch prototype on your local machine:  
 
 1. **Clone the Repository**:  
-   ```bash
-git clone https://github.com/Ravi-Pogaku/CSCI4620-prototype.git
+   ```bash git clone https://github.com/Ravi-Pogaku/CSCI4620-prototype.git
 
 2. **Install Node.js**
 Ensure you have the latest version of Node.js (22.11) installed.
