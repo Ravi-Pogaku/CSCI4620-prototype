@@ -54,7 +54,7 @@ export default function Lockscreen() {
         style={{
           backgroundColor: '#121212',
           color: '#ffffff',
-          width: '300px', // Adjust the size as needed
+          width: '300px', 
           height: '300px', // Ensures 1:1 ratio
           padding: '20px',
           borderRadius: '10%', // Circular smartwatch display
