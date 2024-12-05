@@ -9,21 +9,21 @@ function TimePage() {
       style={{
         backgroundColor: '#1c0239', 
         color: '#ffffff',
-        width: '300px', // Adjust the size as needed
-        height: '300px', // Ensures 1:1 ratio
+        width: '300px', 
+        height: '300px', 
         padding: '20px',
         borderRadius: '10%', // Circular smartwatch display
         boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)', // Subtle shadow effect
-        overflow: 'hidden', // Disable scrolling for now (can adjust as needed)
+        overflow: 'hidden', 
       }}
       className="overflow-hidden d-flex flex-column justify-content-between"
     >
       
 
-      {/* Static Image Inside Scrollable Container */}
+      {/* Static image of time management chat */}
       <div style={{ textAlign: 'center', marginTop: '20px' }}>
         <img
-          src="/time.png" // Replace with your image path
+          src="/time.png" 
           alt="Today's Schedule"
           style={{ maxWidth: '100%', height: 'auto', borderRadius: '10px' }}
         />
