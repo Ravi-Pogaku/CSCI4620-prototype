@@ -23,12 +23,12 @@ function AIAssistant() {
         style={{
           backgroundColor: '#1c0239',
           color: '#ffffff',
-          width: '300px', // Adjust the size as needed
-          height: '300px', // Ensures 1:1 ratio
+          width: '300px', 
+          height: '300px',
           padding: '20px',
           borderRadius: '10%', // Circular smartwatch display
           boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)', // Subtle shadow effect
-          overflow: 'hidden', // Disable scrolling for now (can adjust as needed)
+          overflow: 'hidden', 
         }}
         className="overflow-hidden d-flex flex-column justify-content-between"
       >
@@ -44,7 +44,7 @@ function AIAssistant() {
           <button
             style={{
               backgroundColor: '#d4edda',
-              color: '#1c0239', // Grey text color
+              color: '#1c0239', 
               border: 'none',
               borderRadius: '10px',
               padding: '10px',
@@ -52,7 +52,7 @@ function AIAssistant() {
               marginTop: '10px',
               cursor: 'pointer', // Makes it clear the div is clickable
             }}
-            onClick={() => navigate('/schedule')} // Correct route path
+            onClick={() => navigate('/schedule')} // Navigates to SchedulePage
           >
             <Calendar size={24} />
             <span style={{ marginLeft: '10px' }}>Show today's schedule</span>
@@ -68,9 +68,9 @@ function AIAssistant() {
               padding: '10px',
               width: '100%',
               marginTop: '10px',
-              cursor: 'pointer' // Makes it clear the div is clickable
+              cursor: 'pointer' 
             }}
-            onClick={() => navigate('/map')} // Correct route path
+            onClick={() => navigate('/map')}  // Navigate to MapPage when clicked
           >
             <TreeFill size={24} />
             <span style={{ marginLeft: '10px' }}>Show some nearby parks</span>
@@ -88,7 +88,7 @@ function AIAssistant() {
               marginTop: '8px',
               fontSize: '14px', // Smaller font size for text
             }}
-            onClick={() => navigate('/time')} // Correct route path
+            onClick={() => navigate('/time')}  // Navigate to the time management page when clicked
           >
             <Clock size={18} /> {/* Smaller icon */}
             <span style={{ marginLeft: '8px' }}>
