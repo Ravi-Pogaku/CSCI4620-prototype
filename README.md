@@ -26,7 +26,7 @@ This is a prototype of our COVID Smartwatch, developed using React.
 ![image](https://github.com/user-attachments/assets/c2d426f1-fce8-4773-bcf5-59c447cb2db8)
 
 ## Demo Video
-https://youtu.be/XInzN5HUOWU?feature=shared
+[![Watch the video](https://img.youtube.com/vi/XInzN5HUOWU/0.jpg)](https://youtu.be/XInzN5HUOWU?feature=shared)
 ## Group Members  
 
 - Ravichandra Pogaku  
