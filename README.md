@@ -8,7 +8,7 @@ This is a prototype of our COVID Smartwatch, developed using React.
 
 **Lockscreen**: It has a lockscreen with password for enhanced user security.  
 
-![image](https://github.com/user-attachments/assets/fb81b557-494e-4546-9ef3-0a8e729f2cea)
+![image](https://github.com/user-attachments/assets/ee55c2e3-7f3e-4b24-930a-917257e9b9f7)
 
 **AI Assistant**: It features an AI assistant with intuitive chat prompts to help users get started interacting with it.  
 
