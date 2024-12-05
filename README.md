@@ -1,6 +1,6 @@
 # COVID SmartWatch Prototype  
 
-**COVID Smart Watch: Your AI-Powered Partner for Productivity, Fitness, and Wellness.** 
+**Your AI-Powered Partner for Productivity, Fitness, and Wellness.** 
 
 ## About the Project  
 
@@ -42,7 +42,6 @@ Follow these steps to run the COVID SmartWatch prototype on your local machine:
 1. **Clone the Repository**:  
    ```bash
    git clone https://github.com/Ravi-Pogaku/CSCI4620-prototype.git
-
 2. **Install Node.js**
 Ensure you have the latest version of Node.js (22.11) installed.
 
