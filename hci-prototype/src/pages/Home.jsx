@@ -26,7 +26,7 @@ function Home() {
         style={{
           backgroundColor: '#121212',
           color: '#ffffff',
-          width: '300px', // Adjust the size as needed
+          width: '300px', 
           height: '300px', // Ensures 1:1 ratio
           padding: '20px',
           borderRadius: '10%', // Circular smartwatch display
@@ -48,7 +48,7 @@ function Home() {
             style={{
               height: 75,
               width: 75,
-              cursor: "pointer", // Makes it clear the div is clickable
+              cursor: "pointer", 
             }}
             className="bg-secondary rounded-circle d-flex flex-shrink-0 justify-content-center align-items-center m-1"
             onClick={() => navigate("/ai-assistant")}
