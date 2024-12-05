@@ -9,7 +9,7 @@ function MapPage() {
       style={{
         backgroundColor: '#1c0239', 
         color: '#ffffff',
-        width: '300px', // Adjust the size as needed
+        width: '300px', 
         height: '300px', // Ensures 1:1 ratio
         padding: '20px',
         borderRadius: '10%', // Circular smartwatch display
@@ -20,10 +20,10 @@ function MapPage() {
     >
       
 
-      {/* Static Image Inside Scrollable Container */}
+      {/* Schedule Image */}
       <div style={{ textAlign: 'center', marginTop: '20px' }}>
         <img
-          src="/parks.png" // Replace with your image path
+          src="/parks.png" 
           alt="Today's Schedule"
           style={{ maxWidth: '100%', height: 'auto', borderRadius: '10px' }}
         />
